@@ -1,5 +1,14 @@
+import java.util.Scanner;
+
 public class Functions {
+    public static void printMyName(String name) {
+        System.out.println(name);
+    }
+
     public static void main(String[] args) {
-        System.out.println("Hello Day 3");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        printMyName(input);
+        scanner.close();
     }
 }
